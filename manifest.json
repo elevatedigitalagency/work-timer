@@ -1,0 +1,29 @@
+{
+    "name": "Work Timer",
+    "short_name": "Work Timer",
+    "author": "worktimer@elevatedigital.ie",
+    "version": "0.0.1",
+    "description": "Simple Timer for Working.",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_title": "Work Timer",
+      "default_icon": "/common/img/browser_action_icon.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": ["storage", "notifications", "alarms"],
+    "minimum_chrome_version": "55",
+    "icons": {
+      "16": "common/img/16.png",
+      "48": "common/img/48.png",
+      "128": "common/img/128.png"
+    },
+    "background": {
+      "scripts": [
+        "common/js/background.js"
+      ],
+      "persistent": false
+    },
+    "options_page": "settings.html",
+    "homepage_url": "https://elevatedigital.ie/work-timer",
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Settings - Work Timer</title>
+
+    <!-- Custom fonts -->
+    <link rel="stylesheet" type="text/css" href="common/fonts/fonts.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="common/css/work-timer.css" />
+    <link rel="stylesheet" href="common/css/settings.css" />
+  </head>
+
+  <body>
+    <div id="settings-form">
+      <div class="setting">
+        <input type="checkbox" id="desktop-notification-enabled" checked />
+        <label class="custom-control-label" for="desktop-notification-enabled"
+          >Show desktop notification when timer expires</label
+        >
+      </div>
+      <div class="setting">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="open-new-tab-enabled"
+          checked
+        />
+        <label class="custom-control-label" for="open-new-tab-enabled"
+          >Open new tab when timer expires</label
+        >
+      </div>
+      <div class="setting">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="sound-reminder-enabled"
+          checked
+        />
+        <label class="custom-control-label" for="sound-reminder-enabled"
+          >Play sound when timer expires</label
+        >
+        <select id="notification-sound-dropdown" class="form-control">
+          <option value="beautiful_memories">Beautiful Memories</option>
+          <option value="quiet_time">Quiet Time</option>
+          <option value="tropical_keys">Tropical Keys</option>
+        </select>
+
+        <select id="audio-play-duration-dropdown" class="form-control">
+          <option value="5000">5 seconds</option>
+          <option value="15000">15 seconds</option>
+          <option value="30000">30 seconds</option>
+        </select>
+      </div>
+    </div>
+    <script src="common/js/settings.js"></script>
+  </body>
+</html>
